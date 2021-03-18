@@ -1,29 +1,62 @@
-# assignment-1-22-houte1998-marry-zhang
-assignment-1-22-houte1998-marry-zhang created by GitHub Classroom
+## Development requirements: write about the BE part
+ * If a developer were to set this up on their machine or a remote server, what are the technical requirements (e.g. OS, libraries, etc.)?
 
-This is a simple checkout website using HTML, CSS, Python Flask and SQLite database. 
+Programming language required is Python 3.8
+
+Libraries required are Django, djangorestframework, django-rest-auth, django-cors-headers, psycopg, django-filter, pandas, sqlalchemy, which are recorded in requirements.txt.
+
+Database server required is PostgreSQL
+
+ * Briefly describe instructions for setting up and running the application (think a true README).
+ 
+### `Install Postgresql`
+More details can be found here: https://www.postgresql.org/download/
+
+### `Set up Postgresql` 
+Please use the following credentials/information:
+
+* USER: markv, 
+* HOST: 127.0.0.1, 
+* PORT: 5432 
+* PASSWORD: LunA9
+
+### `Create a local database`
+Create a local database called “korotu”. Detailed instructions on how to create a postgresqul databse can be found on https://www.guru99.com/postgresql-create-database.html
+
+### Available Scripts
+
+Under the team-project-11-korotu/django_react_proj directory (the outer django_react_proj)，you can run:
+
+### `pip install -r requirements.txt`
+to install dependencies
+
+### `python manage.py runserver`
+
+to run the backend of the application
+
+Under the team-project-11-korotu/react_app/ project directory, you can run:
+
+### `npm start`
+
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
+The page will reload if you make edits.\
+You will also see any lint errors in the console.
+
+### `npm test`
+
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+
+### `npm run build`
+
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
+
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
+
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
 
-Website Link：https://boiling-eyrie-66362.herokuapp.com/
-
-Instruction video: Additional Materials/Website-Demo.mp4
-
-Report (include summary of analysis): Additional Materials/Report
-
-
-More about the web app:
-
-There are two pages: the shopping and the checkout page. 
-
-  * On the shopping page, users can 
-    - choose available products, quantity and apply discount
-    - add to the shopping cart
-    - delete unwanted items later in the cart
-    - click checkout button and be redirected to the checkout page
-  
-  * On the checkout page, users can
-    - view summary of items they have purchased
-    - view subtotal, discount and taxes
-    - view total price
-    - go back and edit current shoping cart
-    - start a new empty shopping cart
